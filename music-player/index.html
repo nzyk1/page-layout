@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐流媒体布局</title>
+    <!-- type="text/css" is not necessary in HTML5, but included for compatibility -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="logo">音乐Player</div>
+
+            <nav class="nav-section">
+                <a href="#" class="nav-item">
+                    <span>首页</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>搜索</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span>我的音乐库</span>
+                </a>
+            </nav>
+
+            <div class="nav-section">
+                <div class="nav-section-title">播放列表</div>
+                <a href="#" class="playlist-item">我喜欢的音乐</a>
+                <a href="#" class="playlist-item">每日推荐</a>
+                <a href="#" class="playlist-item">每周发现</a>
+                <a href="#" class="playlist-item">夏日精选</a>
+                <a href="#" class="playlist-item">工作专注</a>
+                <a href="#" class="playlist-item">运动能量</a>
+            </div>
+
+            <div class="nav-section">
+                <a href="#" class="nav-item">
+                    <span class="icon">+</span> 创建播放列表
+                </a>
+                <a href="#" class="nav-item">
+                    <!-- emoji字符 -->
+                    <span class="icon">&#128151</span> 收藏的歌曲
+                </a>
+            </div>
+        </aside>
+
+        <!-- 主要内容 -->
+        <main class="main">
+            <header class="main-header">
+
+                <div class="user-controls"></div>
+
+                <div class="user-controls">
+                    <!-- <span class="icon">放大镜图标</span> -->
+                    <span class="icon">搜索</span>
+                    <div class="user-avatar"></div>
+                </div>
+            </header>
+
+            <section class="content-section">
+                <h2 class="section-title">最近播放</h2>
+
+                <div class="album-grid">
+                    <div class="album-card">
+                        <img src="images/hot.jpg" alt="专辑封面" class="album-cover">
+                        <h3 class="album-title">热门歌曲</h3>
+                        <p class="album-artist">风格多样</p>
+                    </div>
+                    <div class="album-card">
+                        <img src="images/summer-songs.jpg" alt="专辑封面" class="album-cover">
+                        <h3 class="album-title">夏日精选</h3>
+                        <p class="album-artist">流行曲目</p>
+                    </div>
+                    <div class="album-card">
+                        <img src="images/piano.jpg" alt="专辑封面" class="album-cover">
+                        <h3 class="album-title">钢琴曲</h3>
+                        <p class="album-artist">古典优雅</p>
+                    </div>
+                    <div class="album-card">
+                        <img src="images/dj-electronic.png" alt="专辑封面" class="album-cover">
+                        <h3 class="album-title">电子舞曲</h3>
+                        <p class="album-artist">电子DJ</p>
+                    </div>
+                    <div class="album-card">
+                        <img src="images/rock-roll.jpg" alt="专辑封面" class="album-cover">
+                        <h3 class="album-title">经典摇滚</h3>
+                        <p class="album-artist">rock乐队</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">为你推荐</h2>
+
+                <div class="album-grid">
+                    <div class="album-card">
+                        <img src="images/morning.jpg" alt="专辑封面" class="album-cover">
+                        <h3 class="album-title">清晨唤醒</h3>
+                        <p class="album-artist">早安电台</p>
+                    </div>
+                    <div class="album-card">
+                        <img src="images/work.png" alt="专辑封面" class="album-cover">
+                        <h3 class="album-title">工作学习</h3>
+                        <p class="album-artist">专注音乐</p>
+                    </div>
+                    <div class="album-card">
+                        <img src="images/night.png" alt="专辑封面" class="album-cover">
+                        <h3 class="album-title">深夜放松</h3>
+                        <p class="album-artist">轻音乐</p>
+                    </div>
+                    <div class="album-card">
+                        <img src="images/spots.jpg" alt="专辑封面" class="album-cover">
+                        <h3 class="album-title">运动能量</h3>
+                        <p class="album-artist">健身音乐</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 播放器 -->
+        <footer class="player">
+            <div class="now-playing">
+                <img src="images/dj-electronic.png" alt="当前播放" class="now-playing-cover">
+                <div class="now-playing-info">
+                    <div class="now-playing-title">歌曲名</div>
+                    <div class="now-playing-artist">歌手名</div>
+                </div>
+                <button class="control-button">&#128151</button>
+            </div>
+
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button class="control-button">⇤</button>
+                    <button class="control-button">◁</button>
+                    <button class="control-button play">▶</button>
+                    <button class="control-button">▷</button>
+                    <button class="control-button">⇥</button>
+                </div>
+                <div class="progress-container">
+                    <span class="progress-time">1:23</span>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <span class="progress-time">4:56</span>
+                </div>
+            </div>
+
+            <div class="player-volume">
+                <div class="volume-control">
+                    <!-- <span class="icon">播放器图标</span> -->
+                    <span class="icon">音量</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电商商品页</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-button">☰</label>
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">分类</a></li>
+            <li><a href="#">购物车</a></li>
+            <li><a href="#">我的账户</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <h3>价格筛选</h3>
+            <ul class="price-filter">
+                <li><input type="checkbox" id="price1"> <label for="price1">0-100元</label></li>
+                <li><input type="checkbox" id="price2"> <label for="price2">100-300元</label></li>
+                <li><input type="checkbox" id="price3"> <label for="price3">300-500元</label></li>
+                <li><input type="checkbox" id="price4"> <label for="price4">500元以上</label></li>
+            </ul>
+        </aside>
+
+        <!-- 商品网格 -->
+        <main class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="商品图片">
+                <h3>商品名称1</h3>
+                <p class="price">¥99.00</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="商品图片">
+                <h3>商品名称2</h3>
+                <p class="price">¥129.00</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="商品图片">
+                <h3>商品名称3</h3>
+                <p class="price">¥199.00</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="商品图片">
+                <h3>商品名称4</h3>
+                <p class="price">¥259.00</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- 悬浮购物车按钮 -->
+    <button class="cart-button">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-count">3</span>
+    </button>
+</body>
+</html>
